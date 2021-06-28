@@ -3,3 +3,4 @@ gunicorn
 pandas
 sklearn
 fuzzywuzzy
+python-Levenshtein
