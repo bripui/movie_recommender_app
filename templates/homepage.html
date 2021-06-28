@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+    {% block content %}
+    <h2>Welcome to the increadible Movie-Master!!!</h2>
+    <p>Feed him some information and he will tell you, what movies you should not miss!!</p>
+    <h3>Please enter some movies and rate them</h3>
+    <form action="/movies/recommend">
+
+        {% for i in range(5)  %}
+        <fieldset class="flex two">
+            <label><input type="text" placeholder='movie title' name="movie"></label>
+            <label><input type="text" placeholder='rating 0-5' name="rating"></label>
+          </fieldset>
+
+       {% endfor %}
+       <h3>What are your favorite movie genres?</h3>
+        {% for genre in genres  %}
+        <label>
+            <input type="checkbox" id="checkboxdemo" name="genre" value={{genre}}>
+            <span class="checkable"> {{genre}} </span>
+          </label>
+
+       {% endfor %}
+       <br>
+       <button class="myCoolButton">Submit</button>   
+    </form>
+
+    {% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+    {% block content %}
+    <ul>
+    <h3>I have some fantastic movies for you!</h3>    
+    {% for r in recommendations %}
+    <li>{{r}}</li>
+    {% endfor %}
+
+
+
+    </ul>
+
+    <a href="{{ url_for('homepage') }}">Go back to main page</a>
+    {% endblock %}
