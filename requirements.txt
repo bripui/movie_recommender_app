@@ -4,3 +4,4 @@ pandas
 sklearn
 fuzzywuzzy
 python-Levenshtein
+git+git://github.com/bripui/movie_recommender_package

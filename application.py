@@ -1,6 +1,6 @@
 from flask import Flask, Response, request, jsonify, render_template, url_for
-from utils import movies, lookup_movie, movie_average_rating, genres, neighbor_recommender
-from recommender import recommend_most_popular, recommend_random
+from movierecommenderpackage.utils import movies, lookup_movie, movie_genres
+from movierecommenderpackage.recommender import neighbor_recommender, nmf_recommender
 
 
 # here we construct a Flack object and the __name__ sets this script as the root
