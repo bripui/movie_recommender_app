@@ -1,5 +1,5 @@
 from flask import Flask, Response, request, jsonify, render_template, url_for
-from movierecommenderpackage.utils import movies, lookup_movie, movie_genres
+from movierecommenderpackage.utils import movies, lookup_movie, movie_genres, genres
 from movierecommenderpackage.recommender import neighbor_recommender, nmf_recommender
 
 
