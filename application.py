@@ -52,8 +52,18 @@ def recommend():
         'ratings':user_ratings,
         'genres':genre
     }
+    recommender=request.args.getlist('recommender')
+    print(recommender)
 
-    recommendations = neighbor_recommender(user)
+    if not recommender:
+        recommendations = neighbor_recommender(user)
+    else:
+        if recommender[0]=='neighbor':
+            recommendations = neighbor_recommender(user)
+        if recommender[0]=='nmf':
+            recommendations = nmf_recommender(user) 
+
+
     print(recommendations)
 
 
@@ -64,7 +74,8 @@ def recommend():
                             rating=rating, 
                             genre=genre,
                             new_user=user,
-                            recommendations=recommendations)
+                            recommendations=recommendations,
+                            recommender=recommender)
 
 
 

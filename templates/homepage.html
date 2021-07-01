@@ -21,6 +21,19 @@
           </label>
 
        {% endfor %}
+
+       <h3>What recommender do you want to use?</h3>
+
+       <label>
+       <input type="checkbox" id="checkboxdemo2" name="recommender" value='neighbor'>
+       <span class="checkable"> Neighbor Recommender  </span>
+       </label>
+
+       <label>
+       <input type="checkbox" id="checkboxdemo2" name="recommender" value='nmf'>
+       <span class="checkable"> NMF Recommender </span>
+       </label>
+
        <br>
        <button class="myCoolButton">Submit</button>   
     </form>
