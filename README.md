@@ -19,5 +19,5 @@ This project is about building a movie recommandation web application. On the ma
 
 ## Preview
 
-
+![](./preview.gif)
 
