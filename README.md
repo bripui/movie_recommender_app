@@ -1,53 +1,23 @@
-# Getting started with Flask and Heroku
+## Overview
 
-Template for deploying a flask app to heroku. Created for the [Spiced Data Science Bootcamp](https://www.spiced-academy.com/en/program/data-science).
+This project is about building a movie recommandation web application. On the main page the user is ask to rate up to 5 self-chosen movies and to select his favorite movie genres. After submitting, the application recommends 10 movies.
 
+## Features
 
-## Requirements
+- Nearest Neighbors algorithms of sklearn
+- Non-negative Matrix Factorization
 
-- free heroku account
-- heroku cli installed and set up locally 
+## Technology
 
-## Instructions
+- Flask
+- pandas
+- numpy
+- sklearn
+- fuzzywuzzy
+- Python-Levenshtein
+- movierecommenderpackage ()
 
-1. clone the repository
-
-```bash
-git clone https://github.com/bonartm/heroku-flask.git
-cd heroku-flask
-```
-
-2. create a new heroku app
-
-```bash
-heroku create <my-app-name>`
-```
-
-3. test the app locally
-
-```bash
-heroku local web
-```
-
-on windows use 
-
-```bash
-heroku local web -f Procfile.windows
-```
-
-4. push code to heroku
-
-```bash
-git push heroku master
-```
-
-5. open website in browser
-
-```bash
-heroku open
-```
+## Preview
 
 
-## Further Ressources
 
-- [Official python heroku tutorial](https://devcenter.heroku.com/articles/getting-started-with-python) using Djano
